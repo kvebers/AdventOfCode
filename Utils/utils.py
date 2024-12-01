@@ -3,8 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-def getData():
-    url = 'https://adventofcode.com/2024/day/1/input'
+def getData(url):
     cookies = {'session': os.getenv('COOKIES')}
     if not cookies['session']:
         print("Error: Session token is missing in the .env file.")
