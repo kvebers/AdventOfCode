@@ -15,4 +15,3 @@ def getData(url):
     else:
         print(f"Error: Unable to fetch data. HTTP Status Code: {response.status_code}")
         return None
-
